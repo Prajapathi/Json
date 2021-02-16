@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background: url("https://wallpaperaccess.com/full/1567665.png") no-repeat center/cover;
+}
+
+header {
+  height: 20vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 45px;
+  color: white;
+}
+
+header .breed .select {
+  width: 20vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  color: white;
+  background: transparent;
+  padding: 5px;
+}
+
+header .breed .select:hover, header .breed .select:active {
+  outline: none;
+}
+
+header .breed .select option {
+  background-color: black;
+  color: white;
+}
+
+.slideshow {
+  width: 100vw;
+  height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: none;
+}
+
+.slide {
+  width: 90vw;
+  max-width: 750px;
+  height: 70vh;
+  border-radius: 10px;
+  background: no-repeat center / contain;
+}
+
+@media screen and (max-width: 800px) {
+  header .breed select {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .breed select {
+    width: 40vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

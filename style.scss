@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  background: url("https://wallpaperaccess.com/full/1567665.png") no-repeat
+    center / cover;
+}
+
+header {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 45px;
+  color: white;
+}
+
+header .breed .select {
+  width: 20vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  color: white;
+  background: transparent;
+  padding: 5px;
+
+  &:hover,
+  &:active {
+    outline: none;
+  }
+
+  option {
+    background-color: black;
+    color: white;
+  }
+}
+
+.slideshow {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  background: none;
+}
+
+.slide {
+  width: 90vw;
+  max-width: 750px;
+  height: 70vh;
+  border-radius: 10px;
+  background: no-repeat center / contain;
+}
+
+@media screen and (max-width: 800px) {
+  header .breed select {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .breed select {
+    width: 40vw;
+  }
+}
